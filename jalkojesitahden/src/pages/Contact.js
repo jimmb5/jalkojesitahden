@@ -4,6 +4,7 @@ import './Contact.css';
 import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope, FaPhone, FaClock, FaEnvelopeOpenText, FaMap } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import { env } from '../env';
 
 function Contact() {
     const [privacyConsent, setPrivacyConsent] = useState(false);
@@ -24,10 +25,10 @@ function Contact() {
 
         try {
             await emailjs.sendForm(
-                'service_7f5evqb',
-                'template_zvy76du',
+                env.EMAILJS_SERVICE_ID,
+                env.EMAILJS_TEMPLATE_ID,
                 formRef.current,
-                'rD1cDpUInsX5JfBn-'
+                env.EMAILJS_PUBLIC_KEY
             );
             setSubmitSuccess(true);
             formRef.current.reset();
