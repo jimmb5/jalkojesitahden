@@ -6,6 +6,7 @@ import translations from '../locale/fi.json';
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,30 +21,41 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className={`navbar ${visible ? 'show' : 'hide'}`}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          {translations.navbar.title}
+        <Link to="/" className="navbar-logo" onClick={closeMenu}>
+          <img src="/LogoNavbar.png" alt="Jalkojesitahden logo" className="navbar-logo-img" />
         </Link>
-        <ul className="nav-menu">
+        <div className="menu-icon" onClick={toggleMenu}>
+          <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+        <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <Link to="/" className="nav-link" onClick={closeMenu}>
               {translations.navbar.home}
             </Link>
           </li>
-            <li className="nav-item">
-                <Link to="/palvelut" className="nav-link">
-                {translations.navbar.service}
-                </Link>
+          <li className="nav-item">
+            <Link to="/palvelut" className="nav-link" onClick={closeMenu}>
+              {translations.navbar.service}
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/hinnasto" className="nav-link">
+            <Link to="/hinnasto" className="nav-link" onClick={closeMenu}>
               {translations.navbar.pricing}
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/yhteystiedot" className="nav-link">
+            <Link to="/yhteystiedot" className="nav-link" onClick={closeMenu}>
               {translations.navbar.contact}
             </Link>
           </li>
