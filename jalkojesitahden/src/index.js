@@ -8,6 +8,7 @@ import Service from './pages/Service';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Pricing from './pages/Pricing';
+import Privacypolicy from './pages/Privacypolicy';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ root.render(
         <Route path="/yhteystiedot" element={<Contact />} />
         <Route path="/palvelut" element={<Service />} />  
         <Route path="/hinnasto" element={<Pricing />} />
+        <Route path="/tietosuoja" element={<Privacypolicy />} />
       </Routes>
       <Footer />
     </Router>

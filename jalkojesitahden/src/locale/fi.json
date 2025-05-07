@@ -5,7 +5,8 @@
     },
     "contact": {
         "title": "Yhteystiedot",
-        "description": "Ota yhteyttä meihin - Olemme täällä sinua varten! Lisää tähän jotain",
+        "description": "Ajanvaraus onnistuu aina puhelimitse tai sähköpostilla. Alla olevasta lomakkeesta voit myös lähettää yhteydenottopyynnön.",
+        "description2": "Mikäli emme pääse heti vastaamaan, olemme sinuun yhteydessä niin pian kuin mahdollista.",
         "name": "Nimesi",
         "inputemail": "Sähköpostisi",
         "message": "Viestisi",
@@ -17,11 +18,13 @@
         "placeholder": "Kirjoita viesti tähän",
         "contactform": "Yhteydenottolomake",
         "openinghours": "Aukioloajat",
-        "openinghoursweek": "Ma-Pe 09-17",
-        "openinghoursweekend1": "La Suljettu",
-        "openinghoursweekend2": "Su Suljettu",
+        "openinghoursweek": "Ma-Pe: 09-17",
+        "openinghoursweekend1": "La: Suljettu",
+        "openinghoursweekend2": "Su: Suljettu",
         "contactus": "Yhteydenotto",
         "phone": "Puh. 041 3198096",
+        "phone_title": "Puhelinnumero",
+        "phone_placeholder": "Puhelinnumerosi",
         "email": "jalkojesitahden@gmail.com",
         "whatsapp": "WhatsApp",
         "address": "Osoite",
@@ -32,7 +35,14 @@
         "showmap": "Näytä kartalla",
         "contactpreference": "Miten haluat meidän ottavan yhteyttä?",
         "byphone": "Puhelimitse",
-        "byemail": "Sähköpostilla"
+        "byemail": "Sähköpostilla",
+        "privacy_consent": "Hyväksyn tietojeni käsittelyn",
+        "privacy_link": "tietosuojaselosteen",
+        "privacy_consent_required": "Tietosuojaselosteen hyväksyntä on pakollinen",
+        "sending": "Lähetetään...",
+        "success_message": "Kiitos yhteydenotostasi! Olemme sinuun yhteydessä mahdollisimman pian.",
+        "send_another": "Lähetä uusi viesti",
+        "error_sending": "Viestin lähetys epäonnistui. Yritä uudelleen myöhemmin."
     },
     "navbar": {
         "title": "Jalkojesi Tähden",
@@ -51,14 +61,15 @@
         "phone": "Puh. 041 3198096",
         "email": "jalkojesitahden@gmail.com",
         "openinghoursTitle": "Aukioloajat",
-        "openinghoursWeek": "Ma-Pe 09-17",
-        "openinghoursWeekend1": "La Suljettu",
-        "openinghoursWeekend2": "Su Suljettu",
+        "openinghoursWeek": "Ma-Pe: 09-17",
+        "openinghoursWeekend1": "La: Suljettu",
+        "openinghoursWeekend2": "Su: Suljettu",
         "followus": "Seuraa meitä",
         "navigaatio": "Pikalinkit",
         "copyright": "@ 2025 Jalkojesitahden. Kaikki oikeudet pidätetään.",
-        "facebook": "Facebook"
-
+        "facebook": "Facebook",
+        "privacy": "Tietosuojaseloste",
+        "ytunnus": "Y-tunnus: ASDASDASD"
     },
     "service": {
         "title": "Palvelut",
@@ -67,24 +78,24 @@
         "homevisits": "Kotikäynnit",
         "special": "Erikoispalvelut",
         "service_basic1": "Jalkahoito",
-        "service_basic2": "Jalkahoito + kynsien lakkaus",
+        "service_basic2": "Jalkojen tehohoito",
         "service_basic3": "Kynsien lakkaus",
         "service_basic4": "Sisäänkasvanut kynsi",
-        "description_basic1": "Kattava jalkahoito, joka sisältää kynsien leikkauksen, ienhoitoa ja jalkojen hierontaa.",
+        "description_basic1": "Kattava jalkahoito, joka sisältää kynsien leikkauksen, blabla.",
         "description_basic2": "Kattava jalkahoito ja kynsien lakkaus yhdessä hoidossa.",
         "description_basic3": "Kynsien lakkaus ja hoito.",
         "description_basic4": "Sisäänkasvaneen kynnen hoito ja korjaus.",
         "service_home1": "Jalkahoito kotikäyntinä",
-        "service_home2": "Jalkahoito + kynsien lakkaus kotikäyntinä",
+        "service_home2": "Jalkojen tehohoito kotikäyntinä",
         "service_home3": "Kilometrikorvaus",
         "description_home1": "Sama laadukas jalkahoito kuin toimistolla, nyt kotona.",
-        "description_home2": "Kattava jalkahoito ja kynsien lakkaus kotona.",
+        "description_home2": "Kattava jalkahoito ja blabla kotona.",
         "description_home3": "Kilometrikorvaus lasketaan matkan mukaan.",
         "home_note": "Kotikäynnit Kuusamon alueella",
-        "service_special1": "Tehohoito",
-        "service_special2": "Jalkojen hieronta",
-        "service_special3": "Kynsien korjaus",
-        "service_special4": "Erikoishoito",
+        "service_special1": "Jotain",
+        "service_special2": "Jotain",
+        "service_special3": "Jotain",
+        "service_special4": "Erikois jalkahoito",
         "description_special1": "Syvällinen jalkahoito ongelmallisille jaloille.",
         "description_special2": "Rentouttava ja hoitava hieronta.",
         "description_special3": "Kynsien korjaus ja hoito.",
@@ -105,24 +116,24 @@
         "contact_us_button": "Ota yhteyttä",
         "cancellation": "Peruutukset veloituksetta 24h ennen varattua aikaa. Myöhemmin perutuista tai peruuttamatta jätetyistä ajoista veloitetaan 50% palvelun hinnasta.",
         "payment": "Maksutapoina käyvät käteinen, pankkikortti ja E-passi.",
-        "service_basic1": "Jalkahoito (55 min)",
-        "service_basic2": "Jalkahoito + kynsien lakkaus (75 min)",
-        "service_basic3": "Kynsien lakkaus (20 min)",
-        "service_basic4": "Sisäänkasvanut kynsi (30 min)",
+        "service_basic1": "Jalkahoito",
+        "service_basic2": "Jalkojen tehohoito",
+        "service_basic3": "Jotain",
+        "service_basic4": "Jotain",
         "price_basic1": "60 €",
         "price_basic2": "80 €",
         "price_basic3": "25 €",
         "price_basic4": "45 €",
-        "service_home1": "Jalkahoito kotikäyntinä (60 min)",
-        "service_home2": "Jalkahoito + kynsien lakkaus kotikäyntinä (80 min)",
+        "service_home1": "Jalkahoito kotikäyntinä",
+        "service_home2": "Jalkojen tehohoito kotikäyntinä",
         "service_home3": "Kilometrikorvaus",
         "price_home1": "alkaen 70 €",
         "price_home2": "alkaen 90 €",
         "price_home3": "0,50 €/km",
         "home_note": "Kotikäynnit Kuusamon alueella",
-        "service_special1": "Tehohoito (60 min)",
-        "service_special2": "Jotain (45 min)",
-        "service_special3": "Jotain (50 min)",
+        "service_special1": "Jotain",
+        "service_special2": "Jotain",
+        "service_special3": "Jotain",
         "service_special4": "Jotain",
         "price_special1": "80 €",
         "price_special2": "60 €",
@@ -130,5 +141,60 @@
         "price_special4": "120 €",
         "special_note": "Meiltä myös lahjakortteja saatavilla - täydellinen lahjaidea jalkahoitojen ystävälle!",
         "special_note2": "Mikäli palvelua ei löydy hinnastostamme, ota meihin yhteyttä."
+    },
+    "privacypolicy": {
+        "title": "Tietosuojaseloste – Yhteydenottolomake",
+        "date": "Laatimispäivä: 7.5.2025",
+        "controller": {
+            "title": "1. Rekisterinpitäjä",
+            "company": "Yrityksen nimi: Jalkojesi Tähden",
+            "business_id": "Y-tunnus: ASDASDASD",
+            "address": "Osoite: Kirkkokatu 23 2. krs, 93600 Kuusamo",
+            "email": "Sähköposti: jalkojesitahden@gmail.com",
+            "phone": "Puhelin: 041 3198096"
+        },
+        "register": {
+            "title": "2. Rekisterin nimi",
+            "name": "Yhteydenottolomakkeen asiakasrekisteri"
+        },
+        "purpose": {
+            "title": "3. Henkilötietojen käsittelyn tarkoitus",
+            "description": "Henkilötietoja kerätään ainoastaan asiakasyhteydenottojen käsittelemiseksi. Tietoja ei käytetä markkinointiin eikä luovuteta kolmansille osapuolille."
+        },
+        "data": {
+            "title": "4. Käsiteltävät tiedot",
+            "items": [
+                "Nimi",
+                "Sähköpostiosoite",
+                "Puhelinnumero",
+                "Vapaa viestikenttä (mahdollisesti muita asiakkaan antamia tietoja)"
+            ]
+        },
+        "source": {
+            "title": "5. Tietojen lähde",
+            "description": "Tiedot saadaan asiakkaalta itseltään yhteydenottolomakkeen kautta."
+        },
+        "retention": {
+            "title": "6. Tietojen säilytysaika",
+            "description": "Tiedot säilytetään sähköpostissa vain niin kauan kuin on tarpeen asiakasviestinnän hoitamiseksi, kuitenkin enintään 12 kuukautta."
+        },
+        "transfer": {
+            "title": "7. Tietojen luovuttaminen",
+            "description": "Tietoja ei luovuteta kolmansille osapuolille eikä siirretä EU:n tai ETA:n ulkopuolelle."
+        },
+        "rights": {
+            "title": "8. Rekisteröidyn oikeudet",
+            "description": "Asiakkaalla on oikeus:",
+            "items": [
+                "pyytää omien tietojensa tarkastamista, oikaisemista tai poistamista",
+                "peruuttaa suostumus tietojen käsittelyyn",
+                "tehdä valitus valvontaviranomaiselle (tietosuojavaltuutettu)"
+            ],
+            "contact": "Kaikki tietopyynnöt voi lähettää sähköpostitse osoitteeseen: jalkojesitahden@gmail.com"
+        },
+        "security": {
+            "title": "9. Tietoturva",
+            "description": "Sähköpostiviestit vastaanotetaan ja säilytetään suojatuilla laitteilla ja sähköpostitileillä, joihin on pääsy vain rekisterinpitäjällä."
+        }
     }
 }

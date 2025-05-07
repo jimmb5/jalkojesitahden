@@ -16,20 +16,20 @@ function Service() {
                     </div>
                     <div className="service-card-content">
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_basic1}</h4>
-                            <p className="service-description">{translations.service.description_basic1}</p>
+                            <h4 className="service-item-name">{translations.service.service_basic1}</h4>
+                            <p className="service-item-description">{translations.service.description_basic1}</p>
                         </div>
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_basic2}</h4>
-                            <p className="service-description">{translations.service.description_basic2}</p>
+                            <h4 className="service-item-name">{translations.service.service_basic2}</h4>
+                            <p className="service-item-description">{translations.service.description_basic2}</p>
                         </div>
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_basic3}</h4>
-                            <p className="service-description">{translations.service.description_basic3}</p>
+                            <h4 className="service-item-name">{translations.service.service_basic3}</h4>
+                            <p className="service-item-description">{translations.service.description_basic3}</p>
                         </div>
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_basic4}</h4>
-                            <p className="service-description">{translations.service.description_basic4}</p>
+                            <h4 className="service-item-name">{translations.service.service_basic4}</h4>
+                            <p className="service-item-description">{translations.service.description_basic4}</p>
                         </div>
                     </div>
                 </div>
@@ -40,16 +40,16 @@ function Service() {
                     </div>
                     <div className="service-card-content">
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_home1}</h4>
-                            <p className="service-description">{translations.service.description_home1}</p>
+                            <h4 className="service-item-name">{translations.service.service_home1}</h4>
+                            <p className="service-item-description">{translations.service.description_home1}</p>
                         </div>
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_home2}</h4>
-                            <p className="service-description">{translations.service.description_home2}</p>
+                            <h4 className="service-item-name">{translations.service.service_home2}</h4>
+                            <p className="service-item-description">{translations.service.description_home2}</p>
                         </div>
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_home3}</h4>
-                            <p className="service-description">{translations.service.description_home3}</p>
+                            <h4 className="service-item-name">{translations.service.service_home3}</h4>
+                            <p className="service-item-description">{translations.service.description_home3}</p>
                         </div>
                         <p className="note">{translations.service.home_note}</p>
                     </div>
@@ -61,20 +61,20 @@ function Service() {
                     </div>
                     <div className="service-card-content">
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_special1}</h4>
-                            <p className="service-description">{translations.service.description_special1}</p>
+                            <h4 className="service-item-name">{translations.service.service_special1}</h4>
+                            <p className="service-item-description">{translations.service.description_special1}</p>
                         </div>
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_special2}</h4>
-                            <p className="service-description">{translations.service.description_special2}</p>
+                            <h4 className="service-item-name">{translations.service.service_special2}</h4>
+                            <p className="service-item-description">{translations.service.description_special2}</p>
                         </div>
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_special3}</h4>
-                            <p className="service-description">{translations.service.description_special3}</p>
+                            <h4 className="service-item-name">{translations.service.service_special3}</h4>
+                            <p className="service-item-description">{translations.service.description_special3}</p>
                         </div>
                         <div className="service-item">
-                            <h4 className="service-name">{translations.service.service_special4}</h4>
-                            <p className="service-description">{translations.service.description_special4}</p>
+                            <h4 className="service-item-name">{translations.service.service_special4}</h4>
+                            <p className="service-item-description">{translations.service.description_special4}</p>
                         </div>
                     </div>
                 </div>
