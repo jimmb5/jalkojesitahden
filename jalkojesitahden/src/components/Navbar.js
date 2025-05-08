@@ -13,7 +13,8 @@ const Navbar = () => {
       const currentScrollPos = window.scrollY;
       const isScrollingDown = prevScrollPos < currentScrollPos;
       
-      setVisible(!isScrollingDown);
+      // Näytä navbar kun skrollataan ylös tai ollaan sivun alussa
+      setVisible(!isScrollingDown || currentScrollPos < 10);
       setPrevScrollPos(currentScrollPos);
     };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import translations from '../locale/fi.json';
 import './Pricing.css';
-import { FaEuroSign, FaHome, FaStar } from 'react-icons/fa';
+import { FaEuroSign, FaHome, FaStar, FaArrowRight } from 'react-icons/fa';
 
 function Pricing() {
     return (
@@ -72,8 +72,8 @@ function Pricing() {
                 <p className="special-note" style={{ marginBottom: '1rem' }}>{translations.pricing.special_note}</p>
                 <p className="special-note" style={{ marginBottom: '2rem' }}>{translations.pricing.special_note2}</p>
                 <div className="contact-button-container">
-                    <a href="/yhteystiedot" className="contact-button">
-                        {translations.pricing.contact_us_button}
+                    <a href="/yhteystiedot" className="cta-button">
+                        {translations.pricing.contact_us_button} <FaArrowRight className="icon" />
                     </a>
                 </div>
             </div>

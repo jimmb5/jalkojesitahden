@@ -4,7 +4,6 @@ import './Contact.css';
 import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope, FaPhone, FaClock, FaEnvelopeOpenText, FaMap } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import { env } from '../env';
 
 function Contact() {
     const [privacyConsent, setPrivacyConsent] = useState(false);
@@ -12,6 +11,13 @@ function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitSuccess, setSubmitSuccess] = useState(false);
     const formRef = useRef();
+    const successMessageRef = useRef();
+
+    const scrollToSuccessMessage = () => {
+        if (successMessageRef.current) {
+            successMessageRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -23,6 +29,12 @@ function Contact() {
         setIsSubmitting(true);
         setFormError('');
 
+        console.log('EmailJS avaimet:', {
+            serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        });
+
         try {
             await emailjs.sendForm(
                 process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -33,6 +45,7 @@ function Contact() {
             setSubmitSuccess(true);
             formRef.current.reset();
             setPrivacyConsent(false);
+            setTimeout(scrollToSuccessMessage, 100);
         } catch (error) {
             setFormError(translations.contact.error_sending);
             console.error('Error sending email:', error);
@@ -50,7 +63,7 @@ function Contact() {
                 <div className="contact-form-container">
                     <h2><FaEnvelope className="icon" /> {translations.contact.contactform}</h2>
                     {submitSuccess ? (
-                        <div className="success-message">
+                        <div className="success-message" ref={successMessageRef}>
                             <p>{translations.contact.success_message}</p>
                             <button onClick={() => setSubmitSuccess(false)}>
                                 {translations.contact.send_another}
@@ -97,7 +110,7 @@ function Contact() {
                                         type="radio" 
                                         id="byPhone" 
                                         name="contactPreference" 
-                                        value="phone" 
+                                        value="Puhelimitse" 
                                         required
                                     />
                                     <label htmlFor="byPhone">{translations.contact.byphone}</label>
@@ -107,7 +120,7 @@ function Contact() {
                                         type="radio" 
                                         id="byEmail" 
                                         name="contactPreference" 
-                                        value="email" 
+                                        value="Sähköpostitse" 
                                         required
                                     />
                                     <label htmlFor="byEmail">{translations.contact.byemail}</label>

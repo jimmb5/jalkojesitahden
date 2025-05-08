@@ -112,6 +112,10 @@
         grid-column: 1;
     }
     
+    .footer-logo {
+        justify-content: flex-start;
+    }
+    
     .footer-navigation .footer-links {
         flex-direction: row;
         flex-wrap: wrap;
