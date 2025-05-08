@@ -1,7 +1,14 @@
 {
     "home": {
         "title": "Tervetuloa",
-        "description": "Jalkojesi Tähden sovellukseen"
+        "description": "Jalkojesi Tähden sovellukseen",
+        "blog_title1": "Ammattitaitoista jalkahoitoa",
+        "blog_text1": "Jalkojesi Tähden tarjoaa ammattitaitoista jalkahoitoa Kuusamossa. Meillä voit saada kattavan jalkahoidon, joka sisältää kynsien leikkauksen, hoidon ja lakkauksen. Palvelemme asiakkaitamme ammattitaidolla ja huolella, varmistaen että jalkasi saavat parhaan mahdollisen hoidon.",
+        "blog_title2": "Henkilökohtainen palvelu",
+        "blog_text2": "Meillä jokainen asiakas on erityinen. Tarjoamme henkilökohtaista palvelua ja räätälöimme hoidot juuri sinun tarpeidesi mukaan. Kotikäynnit ovat myös mahdollisia Kuusamon alueella, jotta voit saada laadukasta jalkahoitoa omassa kodissasi.",
+        "cta_title": "Varaa aika jalkahoitoon",
+        "cta_text": "Ota meihin yhteyttä ja varaa aika jalkahoitoon. Vastaamme kysymyksiisi ja autamme löytämään juuri sinulle sopivan hoidon.",
+        "cta_button": "Ota yhteyttä"
     },
     "contact": {
         "title": "Yhteystiedot",
@@ -69,7 +76,7 @@
         "copyright": "@ 2025 Jalkojesitahden. Kaikki oikeudet pidätetään.",
         "facebook": "Facebook",
         "privacy": "Tietosuojaseloste",
-        "ytunnus": "Y-tunnus: ASDASDASD"
+        "ytunnus": "Y-tunnus: 2033670-8"
     },
     "service": {
         "title": "Palvelut",
@@ -148,7 +155,7 @@
         "controller": {
             "title": "1. Rekisterinpitäjä",
             "company": "Yrityksen nimi: Jalkojesi Tähden",
-            "business_id": "Y-tunnus: ASDASDASD",
+            "business_id": "Y-tunnus: 2033670-8",
             "address": "Osoite: Kirkkokatu 23 2. krs, 93600 Kuusamo",
             "email": "Sähköposti: jalkojesitahden@gmail.com",
             "phone": "Puhelin: 041 3198096"

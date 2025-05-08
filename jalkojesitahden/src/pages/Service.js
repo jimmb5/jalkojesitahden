@@ -1,7 +1,7 @@
 import React from 'react';
 import translations from '../locale/fi.json';
 import './Service.css';
-import { FaHands, FaHome, FaStar } from 'react-icons/fa';
+import { FaHands, FaHome, FaStar, FaArrowRight } from 'react-icons/fa';
 
 function Service() {
     return (
@@ -83,8 +83,8 @@ function Service() {
             <div className="contact-section">
                 <p className="special-note">{translations.service.special_note}</p>
                 <div className="contact-button-container">
-                    <a href="/yhteystiedot" className="contact-button">
-                        {translations.service.contact_us_button}
+                    <a href="/yhteystiedot" className="cta-button">
+                        {translations.service.contact_us_button} <FaArrowRight className="icon" />
                     </a>
                 </div>
             </div>
