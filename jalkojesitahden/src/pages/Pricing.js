@@ -40,10 +40,6 @@ function Pricing() {
                         <span className="service-name">{translations.pricing.service_home2}</span>
                         <span className="price">{translations.pricing.price_home2}</span>
                     </div>
-                    <div className="price-item">
-                        <span className="service-name">{translations.pricing.service_home3}</span>
-                        <span className="price">{translations.pricing.price_home3}</span>
-                    </div>
                     <p className="note">{translations.pricing.home_note}</p>
                 </div>
                 
