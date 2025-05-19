@@ -40,6 +40,14 @@ function Pricing() {
                         <span className="service-name">{translations.pricing.service_home2}</span>
                         <span className="price">{translations.pricing.price_home2}</span>
                     </div>
+                    <div className="price-item">
+                        <span className="service-name">{translations.pricing.service_home3}</span>
+                        <span className="price">{translations.pricing.price_home3}</span>
+                    </div>
+                    <div className="price-item">
+                        <span className="service-name">{translations.pricing.service_home4}</span>
+                        <span className="price">{translations.pricing.price_home4}</span>
+                    </div>
                     <p className="note">{translations.pricing.home_note}</p>
                 </div>
                 
@@ -48,18 +56,6 @@ function Pricing() {
                     <div className="price-item">
                         <span className="service-name">{translations.pricing.service_special1}</span>
                         <span className="price">{translations.pricing.price_special1}</span>
-                    </div>
-                    <div className="price-item">
-                        <span className="service-name">{translations.pricing.service_special2}</span>
-                        <span className="price">{translations.pricing.price_special2}</span>
-                    </div>
-                    <div className="price-item">
-                        <span className="service-name">{translations.pricing.service_special3}</span>
-                        <span className="price">{translations.pricing.price_special3}</span>
-                    </div>
-                    <div className="price-item">
-                        <span className="service-name">{translations.pricing.service_special4}</span>
-                        <span className="price">{translations.pricing.price_special4}</span>
                     </div>
                 </div>
             </div>

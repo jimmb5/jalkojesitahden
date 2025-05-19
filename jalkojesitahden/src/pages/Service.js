@@ -27,10 +27,6 @@ function Service() {
                             <h4 className="service-item-name">{translations.service.service_basic3}</h4>
                             <p className="service-item-description">{translations.service.description_basic3}</p>
                         </div>
-                        <div className="service-item">
-                            <h4 className="service-item-name">{translations.service.service_basic4}</h4>
-                            <p className="service-item-description">{translations.service.description_basic4}</p>
-                        </div>
                     </div>
                 </div>
                 
@@ -46,6 +42,10 @@ function Service() {
                         <div className="service-item">
                             <h4 className="service-item-name">{translations.service.service_home2}</h4>
                             <p className="service-item-description">{translations.service.description_home2}</p>
+                        </div>
+                        <div className="service-item">
+                            <h4 className="service-item-name">{translations.service.service_home3}</h4>
+                            <p className="service-item-description">{translations.service.description_home3}</p>
                         </div>
                         <p className="note">{translations.service.home_note}</p>
                     </div>
