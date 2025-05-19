@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Pricing from './pages/Pricing';
 import Privacypolicy from './pages/Privacypolicy';
+import NotFound from './pages/NotFound';
 
 // ScrollToTop-komponentti, joka skrollaa sivun alkuun kun navigoidaan
 function ScrollToTop() {
@@ -33,6 +34,7 @@ root.render(
         <Route path="/palvelut" element={<Service />} />  
         <Route path="/hinnasto" element={<Pricing />} />
         <Route path="/tietosuoja" element={<Privacypolicy />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

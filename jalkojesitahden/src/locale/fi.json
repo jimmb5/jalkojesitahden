@@ -203,5 +203,10 @@
             "title": "9. Tietoturva",
             "description": "Sähköpostiviestit vastaanotetaan ja säilytetään suojatuilla laitteilla ja sähköpostitileillä, joihin on pääsy vain rekisterinpitäjällä."
         }
+    },
+    "notfound": {
+        "title": "404",
+        "description": "Sivua ei löytynyt",
+        "button": "Palaa etusivulle"
     }
 }
