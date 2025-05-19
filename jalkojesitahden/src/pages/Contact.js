@@ -1,9 +1,8 @@
 import React, { useState, useRef } from 'react';
 import translations from '../locale/fi.json';
 import './Contact.css';
-import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope, FaPhone, FaClock, FaEnvelopeOpenText, FaMap } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope, FaPhone, FaClock,  } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
 
 function Contact() {
     const [privacyConsent, setPrivacyConsent] = useState(false);
@@ -29,19 +28,28 @@ function Contact() {
         setIsSubmitting(true);
         setFormError('');
 
-        console.log('EmailJS avaimet:', {
-            serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
-            templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-            publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        });
-
         try {
-            await emailjs.sendForm(
-                process.env.REACT_APP_EMAILJS_SERVICE_ID,
-                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-                formRef.current,
-                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-            );
+            const formData = new FormData(formRef.current);
+            const data = {
+                user_name: formData.get('user_name'),
+                user_email: formData.get('user_email'),
+                user_phone: formData.get('user_phone'),
+                message: formData.get('message'),
+                contactPreference: formData.get('contactPreference')
+            };
+
+            const response = await fetch('/api/sendmail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (!response.ok) {
+                throw new Error('Sähköpostin lähetys epäonnistui');
+            }
+
             setSubmitSuccess(true);
             formRef.current.reset();
             setPrivacyConsent(false);
