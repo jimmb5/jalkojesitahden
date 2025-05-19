@@ -60,18 +60,6 @@ function Service() {
                             <h4 className="service-item-name">{translations.service.service_special1}</h4>
                             <p className="service-item-description">{translations.service.description_special1}</p>
                         </div>
-                        <div className="service-item">
-                            <h4 className="service-item-name">{translations.service.service_special2}</h4>
-                            <p className="service-item-description">{translations.service.description_special2}</p>
-                        </div>
-                        <div className="service-item">
-                            <h4 className="service-item-name">{translations.service.service_special3}</h4>
-                            <p className="service-item-description">{translations.service.description_special3}</p>
-                        </div>
-                        <div className="service-item">
-                            <h4 className="service-item-name">{translations.service.service_special4}</h4>
-                            <p className="service-item-description">{translations.service.description_special4}</p>
-                        </div>
                     </div>
                 </div>
             </div>
